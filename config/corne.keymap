@@ -73,7 +73,7 @@
         Number_Symbols {
             label = "NUM";
             bindings = <
-  &mt GRAVE TILDE  &trans           &trans                 &mt RIGHT_BRACKET LBKT      &kp GRAVE    &mt KP_DIVIDE KP_MULTIPLY  &kp N7                  &kp N8                &kp N9                  &hm BSLH PIPE
+  &mt GRAVE TILDE  &trans           &trans                 &mt RIGHT_BRACKET LBKT      &kp GRAVE    &mt KP_DIVIDE KP_MULTIPLY  &kp N7                  &kp N8                &kp N9                  &kp BSLH
   &hm LSHIFT TAB   &hm LEFT_ALT AT  &hm LEFT_CONTROL AMPS  &hm LGUI SINGLE_QUOTE       &kp UNDER    &mt KP_MINUS KP_PLUS       &hm RIGHT_GUI N4        &hm RIGHT_CONTROL N5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_SHIFT KP_EQUAL
   &kp ESC          &trans           &caps_word             &mt RIGHT_PARENTHESIS LPAR  &trans       &hm F10 PLUS               &kp NUMBER_1            &kp NUMBER_2          &kp NUMBER_3            &kp SINGLE_QUOTE
                                     &trans                 &trans                      &trans       &trans                     &mt KP_DOT KP_NUMBER_0  &trans
@@ -83,7 +83,7 @@
         nav {
             label = "NAV";
             bindings = <
-  &none               &none              &kp UP                 &none                &none     &kp HOME   &kp PAGE_UP  &kp PAGE_DOWN  &none      &none
+  &trans              &none              &kp UP                 &none                &none     &kp HOME   &kp PAGE_UP  &kp PAGE_DOWN  &none      &none
   &hm LEFT_SHIFT TAB  &hm LEFT_ALT LEFT  &hm LEFT_CONTROL DOWN  &hm RIGHT_GUI RIGHT  &none     &kp LEFT   &kp DOWN     &kp UP         &kp RIGHT  &none
   &kp ESC             &none              &trans                 &none                &none     &kp END    &none        &caps_word     &none      &trans
                                          &trans                 &trans               &trans    &kp ENTER  &trans       &trans
