@@ -52,7 +52,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -61,8 +60,8 @@
             label = "LAYER_TAP_BACKSPACE_DELETE";
             #binding-cells = <2>;
             bindings = <&mo>, <&bspc_del>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <199>;
-          //  tapping-term-ms = <200>;
         };
     };
 
