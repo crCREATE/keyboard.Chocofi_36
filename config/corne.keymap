@@ -62,11 +62,12 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
         };
 
-        auto_repeat: auto_repeat {
-            compatible = "zmk,behavior-auto-repeat";
-            label = "AUTO_REPEAT";
+        //auto_repeat: auto_repeat {
+        //    compatible = "zmk,behavior-auto-repeat";
+        //    label = "AUTO_REPEAT";
         };
 
         bs_del: backspace_delete {
