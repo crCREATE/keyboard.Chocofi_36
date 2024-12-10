@@ -9,10 +9,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define ARROW   1
-#define NUM  2
-#define SYM 3
-#define MACRO 4
+#define NUM_SYM 1
+#define NAV  2
+#define MEDIA 3
+#define MACRO_FN 4
 
 / {
     chosen {
@@ -23,12 +23,15 @@
 };
 
 // Properties
+
 &lt {
-        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+    quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
 };
+
 // &mt { tapping-term-ms = <150>; };
+
 &mt {
-        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+    quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
 };
 
 / {
@@ -52,14 +55,18 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-            // needs a '0' place holder in the tap position
+
+        // needs a '0' place holder in the tap position
+
         lt_bs_del: layer_tap_bs_del {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BACKSPACE_DELETE";
             #binding-cells = <2>;
             bindings = <&mo>, <&bs_del>;
+
             tapping-term-ms = <200>;
             quick-tap-ms = <199>;
         };
@@ -94,7 +101,7 @@
         };
 
         Number_Symbols {
-            label = "NUM";
+            label = "NUM_SYM";
             bindings = <
   &kp GRAVE      &trans           &trans                 &mt RIGHT_BRACKET LBKT      &mt RIGHT_BRACE LEFT_BRACE    &mt KP_DIVIDE KP_MULTIPLY  &kp N7            &kp N8                &kp N9                  &kp BSLH
   &hm LSHIFT AT  &hm LEFT_ALT AT  &hm LEFT_CONTROL AMPS  &hm LGUI SINGLE_QUOTE       &kp SQT                       &mt KP_MINUS KP_PLUS       &hm RIGHT_GUI N4  &hm RIGHT_CONTROL N5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_SHIFT SQT
@@ -103,7 +110,7 @@
             >;
         };
 
-        nav {
+        Navigation {
             label = "NAV";
             bindings = <
   &trans              &none              &kp UP                 &none                &none     &kp HOME   &none        &none          &none      &none
@@ -124,18 +131,8 @@
             label = "MEDIA";
         };
 
-        symbols_layer {
-            label = "SYM";
-            bindings = <
-  &kp EXCL   &kp AT    &kp HASH   &kp DLLR       &kp PRCNT        &hm TILDE GRAVE  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm BSLH PIPE
-  &trans     &trans    &trans     &hm RBRC LBRC  &kp UNDER        &trans           &trans     &trans     &trans     &trans
-  &kp CARET  &kp AMPS  &kp ASTRK  &hm RPAR LPAR  &hm RBKT LBKT    &trans           &trans     &trans     &trans     &trans
-                       &trans     &trans         &trans           &trans           &trans     &trans
-            >;
-        };
-
-        macro_layer {
-            label = "MACRO";
+        Macro_FN {
+            label = "MACRO_FN";
             bindings = <
   &kp F12      &kp F13      &kp F14      &kp F15      &kp F16        &trans   &trans       &trans       &trans       &trans
   &kp LC(F20)  &kp LC(F19)  &kp F20      &kp F19      &kp F18        &kp F17  &kp LA(F12)  &kp LA(F13)  &kp LA(F14)  &kp LA(F15)
