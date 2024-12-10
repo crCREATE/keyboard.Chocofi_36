@@ -46,7 +46,7 @@
         // TAP weighted tap-hold
         th: tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_hold";
+            //label = "TAP_hold";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
@@ -57,7 +57,7 @@
         // HOLD weighted tap-hold
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_tap";
+            //label = "HOLD_tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
@@ -75,7 +75,8 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-            // needs a '0' place holder in the tap position
+
+        // needs a '0' place holder in the tap position
         lt_bs_del: layer_tap_bs_del {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BACKSPACE_DELETE";
