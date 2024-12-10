@@ -61,7 +61,7 @@
             label = "LAYER_TAP_BACKSPACE_DELETE";
             #binding-cells = <2>;
             bindings = <&mo>, <&bspc_del>;
-            quick-tap-ms = <199>
+            quick-tap-ms = <199>;
           //  tapping-term-ms = <200>;
         };
     };
