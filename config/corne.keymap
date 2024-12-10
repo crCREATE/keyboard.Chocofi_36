@@ -90,10 +90,10 @@
         Number_Symbols {
             label = "NUM";
             bindings = <
-  &kp GRAVE      &trans           &trans                 &mt RIGHT_BRACKET LBKT      &mt RIGHT_BRACE LEFT_BRACE    &mt KP_DIVIDE KP_MULTIPLY  &kp N7                  &kp N8                &kp N9                  &kp BSLH
-  &hm LSHIFT AT  &hm LEFT_ALT AT  &hm LEFT_CONTROL AMPS  &hm LGUI SINGLE_QUOTE       &kp SQT                       &mt KP_MINUS KP_PLUS       &hm RIGHT_GUI N4        &hm RIGHT_CONTROL N5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_SHIFT SQT
-  &kp ESC        &trans           &caps_word             &mt RIGHT_PARENTHESIS LPAR  &trans                        &mt KP_EQUAL KP_N0         &kp NUMBER_1            &mt KP_COMMA N2       &mt KP_DOT N3           &mt KP_ENTER SLASH
-                                  &trans                 &trans                      &trans                        &trans                     &mt KP_DOT KP_NUMBER_0  &trans
+  &kp GRAVE      &trans           &trans                 &mt RIGHT_BRACKET LBKT      &mt RIGHT_BRACE LEFT_BRACE    &mt KP_DIVIDE KP_MULTIPLY  &kp N7            &kp N8                &kp N9                  &kp BSLH
+  &hm LSHIFT AT  &hm LEFT_ALT AT  &hm LEFT_CONTROL AMPS  &hm LGUI SINGLE_QUOTE       &kp SQT                       &mt KP_MINUS KP_PLUS       &hm RIGHT_GUI N4  &hm RIGHT_CONTROL N5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_SHIFT SQT
+  &kp ESC        &trans           &caps_word             &mt RIGHT_PARENTHESIS LPAR  &trans                        &mt KP_EQUAL KP_N0         &kp NUMBER_1      &mt KP_COMMA N2       &mt KP_DOT N3           &mt KP_ENTER SLASH
+                                  &trans                 &sl 0                       &trans                        &trans                     &trans            &sl 1
             >;
         };
 
@@ -103,7 +103,7 @@
   &trans              &none              &kp UP                 &none                &none     &kp HOME   &none        &none          &none      &none
   &hm LEFT_SHIFT TAB  &hm LEFT_ALT LEFT  &hm LEFT_CONTROL DOWN  &hm RIGHT_GUI RIGHT  &none     &kp LEFT   &kp DOWN     &kp UP         &kp RIGHT  &none
   &kp ESC             &none              &trans                 &none                &none     &kp END    &kp PAGE_UP  &kp PAGE_DOWN  &none      &trans
-                                         &trans                 &trans               &trans    &kp ENTER  &trans       &trans
+                                         &trans                 &sl 0                &trans    &kp ENTER  &trans       &sl 2
             >;
         };
 
