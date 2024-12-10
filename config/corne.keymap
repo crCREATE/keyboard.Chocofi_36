@@ -169,7 +169,7 @@
   &kp LC(F20)  &kp LC(F19)  &kp F20      &kp F19      &kp F18        &kp F17  &kp LA(F12)  &kp LA(F13)  &kp LA(F14)  &kp LA(F15)
   &kp LC(F20)  &kp LC(F19)  &kp LA(F20)  &kp LA(F19)  &kp LA(F18)    &trans   &trans       &trans       &trans       &trans
                             &kp LC(F12)  &kp LC(F14)  &kp LC(F15)    &trans   &trans       &trans
-            >;e
+            >;
         };
     };
 };
