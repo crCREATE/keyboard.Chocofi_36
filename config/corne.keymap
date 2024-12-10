@@ -21,9 +21,15 @@
         zmk,matrix_transform = &five_column_transform;
     };
 };
-
-&mt { tapping-term-ms = <150>; };
-
+// Properties
+&lt {
+        //retro-tap; // FIXME: LGUI+TAB for tab switching works. But LGUI+mouseclick does not work correctly when retro-tap is active.
+        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+};
+// &mt { tapping-term-ms = <150>; };
+&mt {
+        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+};
 / {
     behaviors {
         hm: homerow_mods {
