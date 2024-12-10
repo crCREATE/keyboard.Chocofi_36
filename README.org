@@ -46,6 +46,7 @@ also look at your config try commenting out auto repeat??
 
 **** [ ] - can the build action be self-hosted in gitea?
 **** [ ] - [[https://github.com/caksoylar/zmk-rgbled-widget/tree/main][GitHub - caksoylar/zmk-rgbled-widget]]
+**** [ ] - track point
 
 
 * Layers
