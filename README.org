@@ -8,7 +8,9 @@
 **** [ ] - symbol layer optimization
 **** [ ] - media keys add some system macros
     - screen shot and section capture
-**** [ ] -
+**** [ ] - Mouse Use
+    - [[https://zmk.dev/docs/keymaps/behaviors/mouse-emulation][Mouse Emulation Behaviors | ZMK Firmware]]
+**** [ ] - refine TAP_hold HOLD_tap factions
 
 
 *** Resources
