@@ -2,13 +2,9 @@
 #+date: <2024-12-05 Thu>
 
 *** TODO
-**** [ ] - document process
+**** [ ] - merge DEV into Main before proceeding
 
-**** [ ] - key repeat on tap tap hold_
-mentioned at the end.
- - [[https://www.youtube.com/watch?v=NAUxTR4vGys][9 AMAZING ZMK Features That Make My 18 KEY Keyboard Possible - YouTube]]
- - [[https://github.com/benvallack/zmk-config-piano/blob/main/config/boards/shields/piano/piano.keymap][zmk-config-piano/config/boards/shields/piano/piano.keymap at main · benvallac...]]
-also look at your config try commenting out auto repeat??
+**** [ ] - document process
 **** [ ] - symbol layer optimization
 **** [ ] - media keys add some system macros
     - screen shot and section capture

@@ -61,7 +61,7 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&bspc_del>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <199>;
+            quick-tap-ms = <199>;    // looking for tap tap hold repeat
         };
     };
 
