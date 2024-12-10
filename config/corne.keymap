@@ -23,15 +23,12 @@
 };
 
 // Properties
-
 &lt {
-    quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
 };
-
 // &mt { tapping-term-ms = <150>; };
-
 &mt {
-    quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
+        quick-tap-ms = <199>;  // https://github.com/zmkfirmware/zmk/issues/1185
 };
 
 / {
@@ -65,11 +62,11 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
+        };
 
         auto_repeat: auto_repeat {
             compatible = "zmk,behavior-auto-repeat";
             label = "AUTO_REPEAT";
-
         };
 
         bs_del: backspace_delete {
@@ -78,8 +75,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        // needs a '0' place holder in the tap position
+            // needs a '0' place holder in the tap position
         lt_bs_del: layer_tap_bs_del {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BACKSPACE_DELETE";
@@ -112,11 +108,7 @@
         };
     };
 
-
-behaviors {};
-
-behaviors {};
-keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         Alphas {
@@ -126,7 +118,7 @@ keymap {
   &hm LEFT_SHIFT A  &hm LALT S   &hm LEFT_CONTROL D  &hm LEFT_GUI F  &hm SQT G         &th MINUS H  &hm RIGHT_GUI J  &hm RIGHT_CONTROL K  &hm RALT L  &hm RIGHT_SHIFT SEMI
   &lt 3 Z           &kp X        &kp C               &kp V           &kp B             &kp N        &kp M            &kp COMMA            &kp DOT     &lt 3 FSLH
                                  &none               &lt 1 ESC       &lt_bs_del 2 0    &lt 1 SPACE  &th ENTER TAB    &kp C_REPEAT
->;
+           >;
         };
 
         Number_Symbols {
@@ -136,7 +128,7 @@ keymap {
   &hm LSHIFT AT  &hm LEFT_ALT AT  &hm LEFT_CONTROL AMPS  &hm LGUI SINGLE_QUOTE       &kp SQT                       &mt KP_MINUS KP_PLUS       &hm RIGHT_GUI N4  &hm RIGHT_CONTROL N5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_SHIFT SQT
   &kp ESC        &trans           &caps_word             &mt RIGHT_PARENTHESIS LPAR  &trans                        &mt KP_EQUAL KP_N0         &kp NUMBER_1      &mt KP_COMMA N2       &mt KP_DOT N3           &mt KP_ENTER SLASH
                                   &trans                 &sl 0                       &trans                        &trans                     &trans            &sl 1
->;
+            >;
         };
 
         nav {
@@ -146,7 +138,7 @@ keymap {
   &hm LEFT_SHIFT TAB  &hm LEFT_ALT LEFT  &hm LEFT_CONTROL DOWN  &hm RIGHT_GUI RIGHT  &none     &kp LEFT   &kp DOWN     &kp UP         &kp RIGHT  &none
   &kp ESC             &none              &trans                 &none                &none     &kp END    &kp PAGE_UP  &kp PAGE_DOWN  &none      &trans
                                          &trans                 &sl 0                &trans    &kp ENTER  &trans       &sl 2
->;
+            >;
         };
 
         Media {
@@ -155,7 +147,7 @@ keymap {
   &none  &kp C_VOL_DN    &kp C_VOL_UP  &kp C_PLAY_PAUSE  &kp C_BRI_DN    &none  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &kp C_VOL_DN  &none
   &none  &kp C_PREVIOUS  &kp C_NEXT    &kp C_MUTE        &none           &none  &bt BT_SEL 3      &bt BT_SEL 4  &none         &none
                          &none         &none             &none           &none  &none             &none
->;
+            >;
 
             label = "MEDIA";
         };
@@ -167,7 +159,7 @@ keymap {
   &trans     &trans    &trans     &hm RBRC LBRC  &kp UNDER        &trans           &trans     &trans     &trans     &trans
   &kp CARET  &kp AMPS  &kp ASTRK  &hm RPAR LPAR  &hm RBKT LBKT    &trans           &trans     &trans     &trans     &trans
                        &trans     &trans         &trans           &trans           &trans     &trans
->;
+            >;
         };
 
         macro_layer {
@@ -177,7 +169,7 @@ keymap {
   &kp LC(F20)  &kp LC(F19)  &kp F20      &kp F19      &kp F18        &kp F17  &kp LA(F12)  &kp LA(F13)  &kp LA(F14)  &kp LA(F15)
   &kp LC(F20)  &kp LC(F19)  &kp LA(F20)  &kp LA(F19)  &kp LA(F18)    &trans   &trans       &trans       &trans       &trans
                             &kp LC(F12)  &kp LC(F14)  &kp LC(F15)    &trans   &trans       &trans
->;
+            >;e
         };
     };
 };
