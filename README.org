@@ -12,6 +12,7 @@
     - [[https://zmk.dev/docs/keymaps/behaviors/mouse-emulation][Mouse Emulation Behaviors | ZMK Firmware]]
 **** [ ] - refine TAP_hold HOLD_tap factions
 **** [ ] - right shift F working funny/not first press?
+**** [ ] - home row mod hold-repeat behavior enabled. for vim
 
 
 *** Resources
