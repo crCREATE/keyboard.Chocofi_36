@@ -15,6 +15,17 @@
 #define MACRO_FN 4
 
 / {
+    chosen {
+        //zmk,matrix_transform = &default_transform;
+
+        zmk,matrix_transform = &five_column_transform;
+    };
+};
+
+&lt { quick-tap-ms = <199>; };
+&mt { tapping-term-ms = <199>; };
+
+/ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -24,21 +35,6 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        layer_tap {
-            compatible = "zmk,behavior-layer-tap";
-            label = "Layer Tap";
-            #binding-cells = <1>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-        };
-
-        mod_tap {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Modifier Tap";
-            #binding-cells = <1>;
-            tapping-term-ms = <200>;
         };
 
         auto_repeat: auto_repeat {
