@@ -22,9 +22,13 @@
     };
 };
 
+// -- PROPERTIES --
+
 &lt { quick-tap-ms = <199>; };
 &mt { quick-tap-ms = <199>; };
+
 // &mt { tapping-term-ms = <150>; };
+
 
 / {
     behaviors {
@@ -38,6 +42,28 @@
             bindings = <&kp>, <&kp>;
         };
 
+        // TAP weighted tap-hold
+        th: tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            //label = "TAP_hold";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        // HOLD weighted tap-hold
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            //label = "HOLD_tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         auto_repeat: auto_repeat {
             compatible = "zmk,behavior-auto-repeat";
             label = "AUTO_REPEAT";
@@ -47,7 +73,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -58,7 +83,6 @@
             label = "LAYER_TAP_BACKSPACE_DELETE";
             #binding-cells = <2>;
             bindings = <&mo>, <&bs_del>;
-
             tapping-term-ms = <200>;
             quick-tap-ms = <199>;
         };
