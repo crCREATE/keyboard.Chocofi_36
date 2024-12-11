@@ -23,7 +23,8 @@
 };
 
 &lt { quick-tap-ms = <199>; };
-&mt { tapping-term-ms = <199>; };
+&mt { quick-tap-ms = <199>; };
+// &mt { tapping-term-ms = <150>; };
 
 / {
     behaviors {
