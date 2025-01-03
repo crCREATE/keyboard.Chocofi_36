@@ -1,67 +1,44 @@
-#+title: README - Chocofi 36-key split board.
+#+title: README - Chocofi 36-key split board
 #+date: <2024-12-05 Thu>
 
 *** TODO
-**** [ ] - merge DEV into Main before proceeding
-
-**** [ ] - document process
+**** [ ] - home row mod tap tap hold repeat behavior enabled. for vim controls
 **** [ ] - symbol layer optimization
 **** [ ] - media keys add some system macros
-    - screen shot and section capture
+    - screen shot
+    - section capture
 **** [ ] - Mouse Use
     - [[https://zmk.dev/docs/keymaps/behaviors/mouse-emulation][Mouse Emulation Behaviors | ZMK Firmware]]
 **** [ ] - refine TAP_hold HOLD_tap factions
-**** [ ] - right shift F working funny/not first press?
-**** [ ] - home row mod hold-repeat behavior enabled. for vim
+**** ☑ - document build and flash details
 
 
 *** Resources
-**** Official
+**** *Board & Case files*
++ [[https://github.com/pashutk/chocofi][GitHub - pashutk/chocofi: Split 36-key keyboard]]
+
+**** *ZMK Official*
 + homepage: [[https://zmk.dev][Hello from ZMK Firmware | ZMK Firmware]]
 + docs: [[https://zmk.dev/docs][Introduction to ZMK | ZMK Firmware]]
 + code: [[https://github.com/zmkfirmware/zmk][GitHub - zmkfirmware/zmk: ZMK Firmware Repository]]
 
-**** Helpful Tools
-+ visual configerator: [[https://nickcoutsos.github.io/keymap-editor/][Keymap Editor]]
+**** *Helpful Tools*
++ visual configerater: [[https://nickcoutsos.github.io/keymap-editor/][Keymap Editor]]
   - code: [[https://github.com/nickcoutsos/keymap-editor][GitHub - nickcoutsos/keymap-editor: A web based graphical editor of ZMK keymaps.]]
 
-**** Guides & Tips
+**** *Guides & Tips*
 + video Introduction: [[https://www.youtube.com/watch?v=Kx8F4xI5yno][Beginner ZMK Tutorial - How to make and modify your ZMK keymap - YouTube]]
-
-
-* About
-|--------------------+---------------+---------------------------------------|
-| CATEGORY           | ANSWER        | DETAILS / FOLLOW-UP                   |
-|--------------------+---------------+---------------------------------------|
-| ordered:           | 2024-11-11    |                                       |
-| arrived:           | 2024-12-4     | Great Packaging, with extras.         |
-| micro-controllers: | nice!nano v2  | bluetooth connectivity                |
-| Switch type:       | Kailh Choc v1 | low profile                           |
-| switches:          | Red Pro 35gf  |                                       |
-| swappable sockets: | YES           |                                       |
-| batteries:         | ORDER         | https://www.adafruit.com/product/1570 |
-|                    |               |                                       |
-
-** Questions/ideas
-
-**** [ ] - can the build action be self-hosted in gitea?
-**** [ ] - [[https://github.com/caksoylar/zmk-rgbled-widget/tree/main][GitHub - caksoylar/zmk-rgbled-widget]]
-**** [ ] - track point
 
 
 * Layers
 *** 0 - Alphas
-*** 1 - Numaric & symbols
+*** 1 - Numeric & symbols
 *** 2 - F#s & Navigation
 window switcher. button
 *** 3 - Media keys & Macros
 - make a media switcher above
-** Transition questions
-better use thumb cluster
-sticky layers with return to L0
-where to put
-  - enter
-  - tab
-  - escape optimization
-  - symbol
+
+
 * Build & Flash
+
+/... add details .../
